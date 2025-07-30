@@ -47,10 +47,7 @@ A full-featured RESTful API for an ecommerce platform built with Node.js, Expres
 
 5. **Start the server**
    ```bash
-   # Development
    npm run dev
-
-   # Production
    npm start
    ```
 
