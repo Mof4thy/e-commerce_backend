@@ -16,6 +16,9 @@ const getCart = async (req, res) => {
       await cart.save();
     }
 
+    // Filter out items with null products (deleted products)
+    cart.items = cart.items.filter(item => item.product);
+
     res.json({
       cart: {
         id: cart._id,
@@ -106,6 +109,9 @@ const addToCart = async (req, res) => {
       select: 'name price image brand inStock quantity discount'
     });
 
+    // Filter out items with null products (deleted products)
+    cart.items = cart.items.filter(item => item.product);
+
     res.json({
       message: 'Item added to cart successfully',
       cart: {
@@ -187,6 +193,9 @@ const updateCartItem = async (req, res) => {
       select: 'name price image brand inStock quantity discount'
     });
 
+    // Filter out items with null products (deleted products)
+    cart.items = cart.items.filter(item => item.product);
+
     res.json({
       message: 'Cart updated successfully',
       cart: {
@@ -231,6 +240,9 @@ const removeFromCart = async (req, res) => {
       path: 'items.product',
       select: 'name price image brand inStock quantity discount'
     });
+
+    // Filter out items with null products (deleted products)
+    cart.items = cart.items.filter(item => item.product);
 
     res.json({
       message: 'Item removed from cart successfully',
