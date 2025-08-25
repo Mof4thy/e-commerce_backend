@@ -2,7 +2,7 @@
 
 A full-featured RESTful API for an ecommerce platform built with Node.js, Express, and MongoDB. This backend provides comprehensive functionality for user authentication, product management, shopping cart, and wishlist features.
 
-## 🚀 Features
+##  Features
 
 - **User Authentication** - Register, login, profile management with JWT
 - **Product Management** - Browse, search, filter products by category/brand/price
@@ -11,7 +11,7 @@ A full-featured RESTful API for an ecommerce platform built with Node.js, Expres
 - **Advanced Filtering** - Search, sort, and filter products
 - **Category System** - Organized product categories (fruits, dairy, meat, etc.)
 
-## 🛠️ Tech Stack
+##   Tech Stack
 
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB with Mongoose ODM
@@ -19,7 +19,7 @@ A full-featured RESTful API for an ecommerce platform built with Node.js, Expres
 - **Password Security:** bcryptjs for hashing
 - **Environment:** dotenv for configuration
 
-## 📦 Installation
+##  Installation
 
 1. **Clone the repository**
    ```bash
